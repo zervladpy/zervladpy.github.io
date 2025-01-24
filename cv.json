@@ -1,0 +1,109 @@
+{
+    "hero": {
+        "name": "Vladislav Zernov",
+        "position": "Software Engineer",
+        "description": "Building reliable and efficient software with Java, Flutter, Python, and Node.js.",
+        "picture": "",
+        "mail": "zernovvladisalv7@gmail.com"
+    },
+    "social": {
+        "github": "https://github.com/zervladpy",
+        "linkedin": "https://www.linkedin.com/in/vladislav-zernov-62117b241/"
+    },
+    "expirience": [
+        {
+            "company": "The Digital Company",
+            "position": "Full Stack Developer",
+            "intern": true,
+            "dates": {
+                "start": "04/2024",
+                "end": "07/2024"
+            },
+            "description": "Responsible for developing web applications from planning to production, including architecture design, backend and frontend implementation, database integration, security, testing, and deployment."
+        },
+        {
+            "company": "Alma2",
+            "position": "Mobile App Developer",
+            "intern": true,
+            "dates": {
+                "start": "06/2023",
+                "end": "09/2023"
+            },
+            "description": "Adapting web pages for mobile environments, ensuring responsiveness, performance, and a seamless user experience across devices."
+        },
+        {
+            "company": "OnDisc",
+            "position": "Full Stack Developer",
+            "intern": true,
+            "dates": {
+                "start": "09/2021",
+                "end": "12/2021"
+            },
+            "description": "Development of a price inquiry application for suppliers, enabling efficient price comparisons and data retrieval."
+        }
+    ],
+    "education": [
+        {
+            "school": "UNED",
+            "field": "Computer Science Degree",
+            "description": "Bachelor's degree in Computer Science, focusing on software development, algorithms, data structures, and network systems.",
+            "dates": {
+                "start": "09/2024",
+                "end": null
+            },
+            "grade": null
+        },
+        {
+            "school": "IES San Clemente",
+            "field": "Cross Platform Software Developer",
+            "description": "Computer Science education with a focus on cross-platform software development, including skills in creating applications for various platforms and devices.",
+            "dates": {
+                "start": "09/2022",
+                "end": "07/2024"
+            },
+            "grade": 8.0
+        },
+        {
+            "school": "IES San Clemente",
+            "field": "Microcomputer Systems and Networks",
+            "description": "Education in Microcomputer Systems and Networks, focusing on hardware, software, and network infrastructure, with hands-on experience in managing and troubleshooting systems.",
+            "dates": {
+                "start": "09/2019",
+                "end": "12/2021"
+            },
+            "grade": 7.6
+        }
+    ],
+    "projects": [
+        {
+            "name": "The Swap - Frutty Revenge",
+            "description": "2D Platform Game",
+            "image": "",
+            "link": "",
+            "stack": [
+                "unity",
+                "C#"
+            ]
+        },
+        {
+            "name": "Notes4EveryOne",
+            "description": "Note Mobile Application",
+            "image": "",
+            "link": "",
+            "stack": [
+                "kotlin",
+                "firebase"
+            ]
+        }
+    ],
+    "skills": [
+        "javascript",
+        "typescript",
+        "nodejs",
+        "dart",
+        "flutter",
+        "kotlin",
+        "java",
+        "spring-boot"
+    ]
+}
