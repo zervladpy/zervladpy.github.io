@@ -1,0 +1,17 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"section"> {
+    title?: string;
+}
+const props = Astro.props;
+
+const { id, title } = props;
+
+const classList = ["py-10 gap-6", props.class];
+---
+
+<section id={id} class:list={classList}>
+    {title && <h2 class="text-3xl">{title}</h2>}
+    <slot />
+</section>
