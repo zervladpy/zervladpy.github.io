@@ -1,0 +1,10 @@
+---
+import ExpirienceCard from "./ExpirienceCard.astro";
+import Section from "./Section.astro";
+
+import { expirience } from "cv.json";
+---
+
+<Section id="expirience" title="Expirience">
+    {expirience.map((item) => <ExpirienceCard expirience={item} />)}
+</Section>

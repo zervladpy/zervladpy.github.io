@@ -1,0 +1,40 @@
+---
+import Badge from "./Badge.astro";
+import TimeStamp from "./TimeStamp.astro";
+
+interface Props {
+    expirience: {
+        position: string;
+        company: string;
+        intern?: boolean;
+        description: string;
+        dates: {
+            start: string;
+            end?: string;
+        };
+    };
+}
+
+const { position, company, intern, description, dates } =
+    Astro.props.expirience;
+---
+
+<article class="flex flex-row gap-6 py-5">
+    <TimeStamp startDate={dates.start} endDate={dates.end} />
+    <div class="flex flex-col">
+        <div class="flex flex-row justify-between pb-5">
+            <header>
+                <h3 class="text-2xl text-wrap">{position}</h3>
+                <h4 class="text-xl">{company}</h4>
+            </header>
+            {
+                intern && (
+                    <div>
+                        <Badge>Intern</Badge>
+                    </div>
+                )
+            }
+        </div>
+        <p>{description}</p>
+    </div>
+</article>
