@@ -1,0 +1,9 @@
+---
+import Section from "./Section.astro";
+import EducationCard from "./EducationCard.astro";
+import { education } from "cv.json";
+---
+
+<Section id="education" title="Education">
+    {education.map((item) => <EducationCard education={item} />)}
+</Section>
