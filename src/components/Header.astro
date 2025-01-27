@@ -2,34 +2,73 @@
 
 ---
 
-<header class="h-24 flex items-center justify-center text-lg">
-    <nav class="rounded-2xl w-fit">
-        <ul class="flex gap-5 px-3 py-2">
-            <li class="px-4 py-1 rounded-xl" data-selected="true">
-                <a href="#hero">Home</a>
+<header class="h-24 flex items-center justify-center text-xl sticky top-0 z-50">
+    <nav class="rounded-2xl w-fit backdrop-blur-xl px-2 py-2">
+        <ul class="flex gap-5 relative">
+            <div
+                id="indicator"
+                class="absolute rounded-lg transition-all duration-300 ease-in-out"
+            >
+            </div>
+            <li>
+                <a href="#hero" class="px-2 py-2 relative z-10">Home</a>
             </li>
-            <li class="px-4 py-1 rounded-xl">
-                <a href="#expirience">Expirience</a>
+            <li>
+                <a href="#experience" class="px-2 py-2 relative z-10">
+                    Experience
+                </a>
             </li>
-            <li class="px-4 py-1 rounded-xl">
-                <a href="#education">Education</a>
+            <li>
+                <a href="#education" class="px-2 py-2 relative z-10">
+                    Education
+                </a>
             </li>
-            <li class="px-4 py-1 rounded-xl">
-                <a href="#projects">Projects</a>
+            <li>
+                <a href="#projects" class="px-2 py-2 relative z-10">Projects</a>
             </li>
-            <li class="px-4 py-1 rounded-xl">
-                <a href="#skills">Skills</a>
+            <li>
+                <a href="#skills" class="px-2 py-2 relative z-10">Skills</a>
             </li>
         </ul>
     </nav>
 </header>
+
+<script>
+    const indicator = document.getElementById("indicator");
+    const navigationItems = document.querySelectorAll("nav ul li a");
+
+    function updateIndicator(element: Element) {
+        if (!indicator) return;
+
+        const { offsetLeft, offsetWidth } = element;
+
+        indicator.style.left = `${offsetLeft}px`;
+        indicator.style.width = `${offsetWidth}px`;
+    }
+
+    navigationItems.forEach((element) => {
+        element.addEventListener("click", () => {
+            updateIndicator(element);
+        });
+    });
+
+    // Initialize the indicator on page load
+    window.addEventListener("load", () => {
+        if (navigationItems.length > 0) {
+            updateIndicator(navigationItems[0]);
+        }
+    });
+</script>
 
 <style>
     nav {
         background: var(--color-foreground-7);
     }
 
-    li[data-selected] {
-        background: var(--color-secondary);
+    #indicator {
+        background: var(--color-primary);
+        z-index: 1;
+        height: 100%;
+        top: 0;
     }
 </style>

@@ -78,7 +78,7 @@
         {
             "name": "The Swap - Frutty Revenge",
             "description": "2D Platform Game",
-            "image": "",
+            "image": "https://placehold.co/600x400",
             "link": "",
             "stack": [
                 "unity",
@@ -88,7 +88,7 @@
         {
             "name": "Notes4EveryOne",
             "description": "Note Mobile Application",
-            "image": "",
+            "image": "https://placehold.co/600x400",
             "link": "",
             "stack": [
                 "kotlin",

@@ -1,5 +1,10 @@
 ---
 import Section from "./Section.astro";
+import ProjectCard from "@components/ProjectCard.astro";
+
+import { projects } from "cv.json";
 ---
 
-<Section id="projects" title="Projects" class="" />
+<Section id="projects" title="Projects" class="flex flex-col gap-10">
+    {projects.map((item) => <ProjectCard project={item} />)}
+</Section>

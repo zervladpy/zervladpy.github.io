@@ -4,6 +4,6 @@ import EducationCard from "./EducationCard.astro";
 import { education } from "cv.json";
 ---
 
-<Section id="education" title="Education">
+<Section id="education" title="Education" class="flex flex-col gap-10">
     {education.map((item) => <EducationCard education={item} />)}
 </Section>

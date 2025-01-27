@@ -1,5 +1,12 @@
 ---
+import Badge from "./Badge.astro";
 import Section from "./Section.astro";
+
+import { skills } from "cv.json";
 ---
 
-<Section id="skills" title="Skills" class="" />
+<Section id="skills" title="Skills" class="flex flex-col gap-10">
+    <div class="flex justify-center gap-3 flex-wrap grow-0 shrink-0">
+        {skills.map((item) => <Badge>{item}</Badge>)}
+    </div>
+</Section>
