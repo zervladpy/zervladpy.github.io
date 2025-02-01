@@ -2,13 +2,13 @@
 import type { HTMLAttributes } from "astro/types";
 
 interface Props extends HTMLAttributes<"section"> {
-    title?: string;
+    title?: string | null;
 }
 const props = Astro.props;
 
 const { id, title } = props;
 
-const classList = ["py-10 gap-6", props.class];
+const classList = ["py-6 flex flex-col gap-10", props.class];
 ---
 
 <section id={id} class:list={classList}>

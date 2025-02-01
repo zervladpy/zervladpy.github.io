@@ -1,0 +1,21 @@
+---
+import LocaleDropdownMenu from "@components/dropdown/variants/LocaleDropdownMenu.astro";
+import NavigationMenu from "@components/navigation/NavigationMenu.astro";
+
+interface Props {
+    links: { label: string; href: string }[];
+}
+
+const { links } = Astro.props;
+---
+
+<header
+    class={`
+        sticky top-5 z-50 
+        flex justify-between items-center align-middle
+         rounded-xl backdrop-blur-xl py-1 px-2
+    `}
+>
+    <NavigationMenu links={links} />
+    <LocaleDropdownMenu currentLocale="en" />
+</header>

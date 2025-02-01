@@ -1,0 +1,108 @@
+---
+import Button from "@components/button/Button.astro";
+import Badge from "@components/widgets/Badge.astro";
+
+import LinuxIcon from "@assets/icons/techs/Linux.astro";
+import NodeJsIcon from "@assets/icons/techs/NodeJs.astro";
+import JavaScriptIcon from "@assets/icons/techs/JavaScript.astro";
+import TypeScriptIcon from "@assets/icons/techs/TypeScript.astro";
+import TailWindIcon from "@assets/icons/techs/TailwindCss.astro";
+import AstroIcon from "@assets/icons/techs/AstroIcon.astro";
+import NextJsIcon from "@assets/icons/techs/NextJs.astro";
+import ReactIcon from "@assets/icons/techs/React.astro";
+import JavaIcon from "@assets/icons/techs/Java.astro";
+import SpringBootIcon from "@assets/icons/techs/Spring.astro";
+import MySqlIcon from "@assets/icons/techs/MySql.astro";
+import PostgreSQLIcon from "@assets/icons/techs/PostgreSQL.astro";
+import UnityIcon from "@assets/icons/techs/Unity.astro";
+import NETIcon from "@assets/icons/techs/NET.astro";
+import GitIcon from "@assets/icons/techs/Git.astro";
+import GitHubIcon from "@assets/icons/GitHub.astro";
+import DartIcon from "@assets/icons/techs/Dart.astro";
+import FlutterIcon from "@assets/icons/techs/Flutter.astro";
+import KotlinIcon from "@assets/icons/techs/Kotlin.astro";
+import FirebaseIcon from "@assets/icons/techs/Firebase.astro";
+import SupabaseIcon from "@assets/icons/techs/Supabase.astro";
+import DockerIcon from "@assets/icons/techs/Docker.astro";
+import ArrowIcon from "@assets/icons/Arrow.astro";
+
+const TECH_ICONS: Record<string, any> = {
+    // systems
+    Linux: LinuxIcon,
+    // Web (FrontEnd)
+    NodeJs: NodeJsIcon,
+    JavaScript: JavaScriptIcon,
+    TypeScript: TypeScriptIcon,
+    Tailwind: TailWindIcon,
+    Astro: AstroIcon,
+    NextJs: NextJsIcon,
+    React: ReactIcon,
+    // Backend
+    Java: JavaIcon,
+    SpringBoot: SpringBootIcon,
+    // Databases
+    MySql: MySqlIcon,
+    PostgreSQL: PostgreSQLIcon,
+    // Mobile Development
+    Dart: DartIcon,
+    Flutter: FlutterIcon,
+    Kotlin: KotlinIcon,
+    // Game Development
+    Unity: UnityIcon,
+    NET: NETIcon,
+    // Version Control
+    Git: GitIcon,
+    GitHub: GitHubIcon,
+    // SaaS
+    Firebase: FirebaseIcon,
+    Supabase: SupabaseIcon,
+    // DevOps
+    Docker: DockerIcon,
+};
+
+interface Props {
+    project: {
+        name: string;
+        description: string;
+        image?: string;
+        link: string;
+        stack: string[];
+    };
+}
+
+const { name, description, image, link, stack } = Astro.props.project;
+---
+
+<article class="flex flex-col gap-2">
+    {
+        image && (
+            <figure>
+                <img
+                    src={image}
+                    class="w-full rounded-3xl"
+                    alt="project image"
+                />
+            </figure>
+        )
+    }
+    <header>
+        <h3 class="text-2xl">{name}</h3>
+        <p>{description}</p>
+    </header>
+    <footer class="flex justify-between">
+        <div class="flex gap-2">
+            {
+                stack.map((item) => {
+                    const Icon = TECH_ICONS[item];
+                    return (
+                        <Badge>
+                            <Icon class="size-4" />
+                            {item}
+                        </Badge>
+                    );
+                })
+            }
+        </div>
+        <Button href={link} target="_blank">Explore <ArrowIcon /></Button>
+    </footer>
+</article>

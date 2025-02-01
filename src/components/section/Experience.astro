@@ -1,0 +1,20 @@
+---
+import ExperienceCard from "@components/card/ExperienceCard.astro";
+
+interface Props {
+    experiences: {
+        company: string;
+        position: string;
+        badge?: string;
+        dates: {
+            start: string;
+            end: string;
+        };
+        description: string;
+    }[];
+}
+
+const { experiences } = Astro.props;
+---
+
+{experiences.map((experience) => <ExperienceCard {experience} />)}

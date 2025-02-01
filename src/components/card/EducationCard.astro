@@ -1,21 +1,22 @@
 ---
-import Badge from "./Badge.astro";
-import TimeStamp from "./TimeStamp.astro";
+import Badge from "@components/widgets/Badge.astro";
+import TimeStamp from "@components/widgets/TimeStamp.astro";
 
 interface Props {
     education: {
         school: string;
         field: string;
         description: string;
-        grade: number | null;
         dates: {
             start: string;
             end?: string;
         };
+        grade?: number;
     };
 }
 
-const { school, field, grade, description, dates } = Astro.props.education;
+const props = Astro.props;
+const { school, field, grade, description, dates } = props.education;
 ---
 
 <article class="flex flex-row gap-6">
@@ -29,7 +30,7 @@ const { school, field, grade, description, dates } = Astro.props.education;
             {
                 grade && (
                     <div>
-                        <Badge>{grade}</Badge>
+                        <Badge>{grade.toPrecision(2)}</Badge>
                     </div>
                 )
             }

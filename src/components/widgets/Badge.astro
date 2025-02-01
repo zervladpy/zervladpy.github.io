@@ -1,0 +1,25 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"a"> {}
+
+const props = Astro.props;
+
+const classList = [
+    "flex items-center gap-2 py-1 px-4 rounded-2xl leading-6",
+    props.href != null
+        ? "transition-transform duration-200 ease-in-out hover:scale-105"
+        : "",
+    props.class,
+];
+---
+
+<a href={props.href} class:list={classList}>
+    <slot />
+</a>
+
+<style>
+    a {
+        background: var(--color-foreground-7);
+    }
+</style>

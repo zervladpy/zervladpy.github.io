@@ -1,12 +1,12 @@
 ---
-import Badge from "./Badge.astro";
-import TimeStamp from "./TimeStamp.astro";
+import Badge from "@components/widgets/Badge.astro";
+import TimeStamp from "@components/widgets/TimeStamp.astro";
 
 interface Props {
-    expirience: {
+    experience: {
         position: string;
         company: string;
-        intern?: boolean;
+        badge?: string;
         description: string;
         dates: {
             start: string;
@@ -15,8 +15,7 @@ interface Props {
     };
 }
 
-const { position, company, intern, description, dates } =
-    Astro.props.expirience;
+const { position, company, badge, description, dates } = Astro.props.experience;
 ---
 
 <article class="flex flex-row gap-6">
@@ -28,9 +27,9 @@ const { position, company, intern, description, dates } =
                 <h4 class="text-xl">{company}</h4>
             </header>
             {
-                intern && (
+                badge && (
                     <div>
-                        <Badge>Intern</Badge>
+                        <Badge>{badge}</Badge>
                     </div>
                 )
             }

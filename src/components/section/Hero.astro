@@ -1,0 +1,42 @@
+---
+import Badge from "@components/widgets/Badge.astro";
+import MailIcon from "@assets/icons/Mail.astro";
+import GitHubIcon from "@assets/icons/GitHub.astro";
+import LinkedInIcon from "@assets/icons/LinkedIn.astro";
+
+interface Props {
+    content: {
+        name: string;
+        position: string;
+        description: string;
+        picture: string;
+        mail: string;
+    };
+    social: {
+        github: string;
+        linkedin: string;
+    };
+}
+
+const props = Astro.props;
+
+const { name, position, description, mail, picture } = props.content;
+const social = props.social;
+---
+
+<img class="size-32 rounded-3xl" src={picture} alt="profile image" />
+<div class="flex items-baseline">
+    <h1 class="text-5xl">{name}</h1>
+    <h2 class="text-xl">{position}</h2>
+</div>
+<p class="text-2xl">{description}</p>
+<div class="flex gap-6">
+    <Badge href={social.github}><GitHubIcon class="size-4" /> GitHub</Badge>
+    <Badge href={social.linkedin}
+        ><LinkedInIcon class="size-4" /> LinkedIn</Badge
+    >
+    <Badge href=`mailto:${mail}`>
+        <MailIcon class="size-6" />
+        <span class="leading-7">Mail</span>
+    </Badge>
+</div>

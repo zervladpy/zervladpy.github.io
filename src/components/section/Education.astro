@@ -1,0 +1,20 @@
+---
+import EducationCard from "@components/card/EducationCard.astro";
+
+interface Props {
+    educations: {
+        school: string;
+        field: string;
+        description: string;
+        dates: {
+            start: string;
+            end?: string;
+        };
+        grade?: number;
+    }[];
+}
+
+const { educations } = Astro.props;
+---
+
+{educations.map((education) => <EducationCard {education} />)}

@@ -1,23 +1,24 @@
 ---
+import { social, hero } from "cv.json";
+
 import GitHubIcon from "@assets/icons/GitHub.astro";
 import LinkedInIcon from "@assets/icons/LinkedIn.astro";
 import MailIcon from "@assets/icons/Mail.astro";
-import { social, hero } from "cv.json";
-import Badge from "./Badge.astro";
+import Badge from "@components/widgets/Badge.astro";
 ---
 
 <footer class="flex justify-center items-center h-24">
     <div class="flex gap-6 h-8">
         <Badge href={social.github}>
-            <GitHubIcon />
+            <GitHubIcon class="size-4" />
             <span>GitHub</span>
         </Badge>
         <Badge href={social.linkedin}>
-            <LinkedInIcon />
+            <LinkedInIcon class="size-4" />
             <span>LinkedIn</span>
         </Badge>
         <Badge href=`mailto:${hero.mail}`>
-            <MailIcon class="size-7" />
+            <MailIcon class="size-6" />
             <span class="leading-7">Mail</span>
         </Badge>
     </div>

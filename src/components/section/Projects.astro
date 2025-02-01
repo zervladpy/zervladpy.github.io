@@ -1,0 +1,17 @@
+---
+import ProjectCard from "@components/card/ProjectCard.astro";
+
+interface Props {
+    projects: {
+        name: string;
+        description: string;
+        image?: string;
+        link: string;
+        stack: string[];
+    }[];
+}
+
+const { projects } = Astro.props;
+---
+
+{projects.map((project) => <ProjectCard {project} />)}
