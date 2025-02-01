@@ -2,7 +2,7 @@
 import { sections } from "@lib/section";
 import { i18n } from "@lib/i18n";
 
-const { en } = i18n;
+const { ru } = i18n;
 
 import Layout from "@layouts/Layout.astro";
 
@@ -22,35 +22,35 @@ import {
     educations,
     projects,
     skills,
-} from "cv.json";
+} from "cv_ru.json";
 ---
 
-<Layout title="Vladislav Zernov - Software Engineer" locale="en">
+<Layout title="Vladislav Zernov - Software Engineer" locale="ru">
     <Header
         links={[
-            { label: en.nav.me, href: `#${sections.hero.id}` },
+            { label: ru.nav.me, href: `#${sections.hero.id}` },
             {
-                label: en.nav.experience,
+                label: ru.nav.experience,
                 href: `#${sections.experience.id}`,
             },
-            { label: en.nav.education, href: `#${sections.education.id}` },
-            { label: en.nav.projects, href: `#${sections.projects.id}` },
-            { label: en.nav.skills, href: `#${sections.skills.id}` },
+            { label: ru.nav.education, href: `#${sections.education.id}` },
+            { label: ru.nav.projects, href: `#${sections.projects.id}` },
+            { label: ru.nav.skills, href: `#${sections.skills.id}` },
         ]}
     />
     <Section id={sections.hero.id} class="mt-5">
         <Hero content={hero} social={social} />
     </Section>
-    <Section id={sections.experience.id} title={en.nav.experience}>
+    <Section id={sections.experience.id} title={ru.nav.experience}>
         <Experience experiences={experiences} />
     </Section>
-    <Section id={sections.education.id} title={en.nav.education}>
+    <Section id={sections.education.id} title={ru.nav.education}>
         <Education educations={educations} />
     </Section>
-    <Section id={sections.projects.id} title={en.nav.projects}>
+    <Section id={sections.projects.id} title={ru.nav.projects}>
         <Projects projects={projects} />
     </Section>
-    <Section id={sections.skills.id} title={en.nav.skills}>
+    <Section id={sections.skills.id} title={ru.nav.skills}>
         <Skills skills={skills} />
     </Section>
     <Footer social={social} mail={hero.mail} />
