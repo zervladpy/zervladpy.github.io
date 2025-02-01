@@ -1,0 +1,120 @@
+{
+    "hero": {
+        "name": "Владислав Зернов",
+        "position": "Инженер-программист",
+        "description": "Создание надежного и эффективного программного обеспечения на Java, Flutter, Python и Node.js.",
+        "picture": "/images/me.webp",
+        "mail": "zernovvladisalv7@gmail.com"
+    },
+    "social": {
+        "github": "https://github.com/zervladpy",
+        "linkedin": "https://www.linkedin.com/in/vladislav-zernov-62117b241/"
+    },
+    "experiences": [
+        {
+            "company": "The Digital Company",
+            "position": "Full Stack Разработчик",
+            "badge": "Стажер",
+            "dates": {
+                "start": "04/2024",
+                "end": "07/2024"
+            },
+            "description": "Разработка веб-приложений от планирования до продакшена, включая проектирование архитектуры, реализацию бэкенда и фронтенда, интеграцию базы данных, безопасность, тестирование и развертывание."
+        },
+        {
+            "company": "Alma2",
+            "position": "Разработчик мобильных приложений",
+            "badge": "Стажер",
+            "dates": {
+                "start": "06/2023",
+                "end": "09/2023"
+            },
+            "description": "Адаптация веб-страниц для мобильных устройств, обеспечение отзывчивости, производительности и удобства использования на разных устройствах."
+        },
+        {
+            "company": "OnDisc",
+            "position": "Full Stack Разработчик",
+            "badge": "Стажер",
+            "dates": {
+                "start": "09/2021",
+                "end": "12/2021"
+            },
+            "description": "Разработка приложения для запроса цен у поставщиков, позволяющего эффективно сравнивать цены и извлекать данные."
+        }
+    ],
+    "educations": [
+        {
+            "school": "UNED",
+            "field": "Степень бакалавра в области компьютерных наук",
+            "description": "Бакалавриат по информатике с акцентом на разработку программного обеспечения, алгоритмы, структуры данных и сетевые системы.",
+            "dates": {
+                "start": "09/2024"
+            }
+        },
+        {
+            "school": "IES San Clemente",
+            "field": "Разработчик кроссплатформенного программного обеспечения",
+            "description": "Образование в области компьютерных наук с акцентом на кроссплатформенную разработку, включая навыки создания приложений для различных платформ и устройств.",
+            "dates": {
+                "start": "09/2022",
+                "end": "07/2024"
+            },
+            "grade": 8.0
+        },
+        {
+            "school": "IES San Clemente",
+            "field": "Микрокомпьютерные системы и сети",
+            "description": "Образование в области микрокомпьютерных систем и сетей, с акцентом на аппаратное и программное обеспечение, сетевую инфраструктуру и практический опыт управления и устранения неисправностей систем.",
+            "dates": {
+                "start": "09/2019",
+                "end": "12/2021"
+            },
+            "grade": 7.6
+        }
+    ],
+    "projects": [
+        {
+            "name": "The Swap - Frutty Revenge",
+            "description": "2D платформер",
+            "image": "/images/mockups/the_swamp_mockup_variant.webp",
+            "link": "https://github.com/zervladpy/TheSwam-FruityRevenge/tree/master",
+            "stack": [
+                "Unity",
+                "NET"
+            ]
+        },
+        {
+            "name": "Notes4EveryOne",
+            "description": "Мобильное приложение для заметок",
+            "link": "https://github.com/zervladpy/NotesForEveryone/tree/main/UF1_Proyecto_compose",
+            "stack": [
+                "Kotlin",
+                "Firebase"
+            ]
+        }
+    ],
+    "skills": [
+        "Linux",
+        "NodeJs",
+        "JavaScript",
+        "TypeScript",
+        "Tailwind",
+        "Astro",
+        "NextJs",
+        "React",
+        "Java",
+        "SpringBoot",
+        "MySql",
+        "PostgreSQL",
+        "Dart",
+        "Flutter",
+        "Kotlin",
+        "Unity",
+        "NET",
+        "Git",
+        "GitHub",
+        "Firebase",
+        "Supabase",
+        "Docker"
+    ]
+}

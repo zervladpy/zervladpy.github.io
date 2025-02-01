@@ -1,8 +1,8 @@
 {
     "hero": {
         "name": "Vladislav Zernov",
-        "position": "Software Engineer",
-        "description": "Building reliable and efficient software with Java, Flutter, Python, and Node.js.",
+        "position": "Ingeniero de Software",
+        "description": "Construyendo software confiable y eficiente con Java, Flutter, Python y Node.js.",
         "picture": "/images/me.webp",
         "mail": "zernovvladisalv7@gmail.com"
     },
@@ -13,48 +13,48 @@
     "experiences": [
         {
             "company": "The Digital Company",
-            "position": "Full Stack Developer",
-            "badge": "Internship",
+            "position": "Desarrollador Full Stack",
+            "badge": "Becario",
             "dates": {
                 "start": "04/2024",
                 "end": "07/2024"
             },
-            "description": "Responsible for developing web applications from planning to production, including architecture design, backend and frontend implementation, database integration, security, testing, and deployment."
+            "description": "Responsable del desarrollo de aplicaciones web desde la planificación hasta la producción, incluyendo diseño de arquitectura, implementación de backend y frontend, integración de bases de datos, seguridad, pruebas y despliegue."
         },
         {
             "company": "Alma2",
-            "position": "Mobile App Developer",
-            "badge": "Internship",
+            "position": "Desarrollador de Aplicaciones Móviles",
+            "badge": "Becario",
             "dates": {
                 "start": "06/2023",
                 "end": "09/2023"
             },
-            "description": "Adapting web pages for mobile environments, ensuring responsiveness, performance, and a seamless user experience across devices."
+            "description": "Adaptación de páginas web para entornos móviles, garantizando capacidad de respuesta, rendimiento y una experiencia de usuario fluida en todos los dispositivos."
         },
         {
             "company": "OnDisc",
-            "position": "Full Stack Developer",
-            "badge": "Internship",
+            "position": "Desarrollador Full Stack",
+            "badge": "Becario",
             "dates": {
                 "start": "09/2021",
                 "end": "12/2021"
             },
-            "description": "Development of a price inquiry application for suppliers, enabling efficient price comparisons and data retrieval."
+            "description": "Desarrollo de una aplicación de consulta de precios para proveedores, permitiendo comparaciones de precios eficientes y recuperación de datos."
         }
     ],
     "educations": [
         {
             "school": "UNED",
-            "field": "Computer Science Degree",
-            "description": "Bachelor's degree in Computer Science, focusing on software development, algorithms, data structures, and network systems.",
+            "field": "Licenciatura en Informática",
+            "description": "Licenciatura en Informática con enfoque en desarrollo de software, algoritmos, estructuras de datos y sistemas de redes.",
             "dates": {
                 "start": "09/2024"
             }
         },
         {
             "school": "IES San Clemente",
-            "field": "Cross Platform Software Developer",
-            "description": "Computer Science education with a focus on cross-platform software development, including skills in creating applications for various platforms and devices.",
+            "field": "Desarrollador de Software Multiplataforma",
+            "description": "Educación en informática con enfoque en el desarrollo de software multiplataforma, incluyendo habilidades para crear aplicaciones para diversas plataformas y dispositivos.",
             "dates": {
                 "start": "09/2022",
                 "end": "07/2024"
@@ -63,8 +63,8 @@
         },
         {
             "school": "IES San Clemente",
-            "field": "Microcomputer Systems and Networks",
-            "description": "Education in Microcomputer Systems and Networks, focusing on hardware, software, and network infrastructure, with hands-on experience in managing and troubleshooting systems.",
+            "field": "Sistemas Microinformáticos y Redes",
+            "description": "Educación en Sistemas Microinformáticos y Redes, enfocándose en hardware, software e infraestructura de redes, con experiencia práctica en gestión y resolución de problemas de sistemas.",
             "dates": {
                 "start": "09/2019",
                 "end": "12/2021"
@@ -75,7 +75,7 @@
     "projects": [
         {
             "name": "The Swap - Frutty Revenge",
-            "description": "2D Platform Game",
+            "description": "Juego de Plataforma 2D",
             "image": "/images/mockups/the_swamp_mockup_variant.webp",
             "link": "https://github.com/zervladpy/TheSwam-FruityRevenge/tree/master",
             "stack": [
@@ -85,7 +85,7 @@
         },
         {
             "name": "Notes4EveryOne",
-            "description": "Note Mobile Application",
+            "description": "Aplicación Móvil de Notas",
             "link": "https://github.com/zervladpy/NotesForEveryone/tree/main/UF1_Proyecto_compose",
             "stack": [
                 "Kotlin",
