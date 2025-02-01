@@ -1,0 +1,7 @@
+---
+const classList = ["group", "relative", "text-xl", Astro.props.class];
+---
+
+<button class:list={classList} aria-expanded="true" aria-haspopup="true">
+    <slot />
+</button>

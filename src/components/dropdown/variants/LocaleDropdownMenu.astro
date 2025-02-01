@@ -1,0 +1,49 @@
+---
+import type { locale } from "@lib/locale";
+import { locales } from "@lib/locale";
+
+import UnitedStatesIcon from "@assets/icons/flags/UnitedStates.astro";
+import SpainIcon from "@assets/icons/flags/Spain.astro";
+import PortugalIcon from "@assets/icons/flags/Portugal.astro";
+import ItalyIcon from "@assets/icons/flags/Italy.astro";
+import RussiaIcon from "@assets/icons/flags/Russia.astro";
+
+import Dropdown from "@components/dropdown/Dropdown.astro";
+import DropdownLabel from "@components/dropdown/DropdownLabel.astro";
+import DropdownMenu from "@components/dropdown/DropdownMenu.astro";
+import DropdownMenuItem from "@components/dropdown/DropdownMenuItem.astro";
+
+const currentLocale = Astro.currentLocale ?? "en";
+
+const FLAG_ICONS: Record<string, any> = {
+    en: UnitedStatesIcon,
+    es: SpainIcon,
+    ru: RussiaIcon,
+    it: ItalyIcon,
+    pt: PortugalIcon,
+};
+
+const CurrentSelection = FLAG_ICONS[currentLocale] ?? FLAG_ICONS.en;
+---
+
+<Dropdown class="">
+    <DropdownLabel>
+        <CurrentSelection />
+    </DropdownLabel>
+    <DropdownMenu>
+        {
+            locales.map((locale) => {
+                if (currentLocale === locale.code) return;
+
+                const Icon = FLAG_ICONS[locale.code];
+                const href = locale.code != "en" ? `/${locale.code}` : "/";
+
+                return (
+                    <DropdownMenuItem href={href}>
+                        <Icon />
+                    </DropdownMenuItem>
+                );
+            })
+        }
+    </DropdownMenu>
+</Dropdown>
