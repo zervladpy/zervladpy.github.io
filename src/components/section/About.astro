@@ -1,0 +1,17 @@
+---
+interface Props {
+    about: string;
+}
+
+const { about } = Astro.props;
+---
+
+<p class="prose-lg">
+    {about}
+</p>
+
+<style>
+    p {
+        color: var(--color-foreground);
+    }
+</style>

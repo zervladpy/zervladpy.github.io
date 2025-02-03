@@ -14,6 +14,7 @@ import Projects from "@components/section/Projects.astro";
 import Skills from "@components/section/Skills.astro";
 import Footer from "@components/section/Footer.astro";
 import Section from "@components/section/Section.astro";
+import About from "@components/section/About.astro";
 
 import {
     hero,
@@ -21,6 +22,7 @@ import {
     experiences,
     educations,
     projects,
+    about,
     skills,
 } from "cv_it.json";
 ---
@@ -40,6 +42,7 @@ import {
             { label: it.nav.education, href: `#${sections.education.id}` },
             { label: it.nav.projects, href: `#${sections.projects.id}` },
             { label: it.nav.skills, href: `#${sections.skills.id}` },
+            { label: it.nav.about, href: `#${sections.about.id}` },
         ]}
     />
     <Section id={sections.hero.id} class="mt-5">
@@ -56,6 +59,9 @@ import {
     </Section>
     <Section id={sections.skills.id} title={it.nav.skills}>
         <Skills skills={skills} />
+    </Section>
+    <Section id={sections.about.id} title={it.nav.me}>
+        <About about={about} />
     </Section>
     <Footer social={social} mail={hero.mail} />
 </Layout>
