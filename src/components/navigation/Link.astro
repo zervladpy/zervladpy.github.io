@@ -5,7 +5,7 @@ interface Props extends HTMLAttributes<"a"> {}
 
 const props = Astro.props;
 
-const classList = ["text-xl", props.class];
+const classList = ["text", props.class];
 ---
 
 <a class:list={classList} {...props}>

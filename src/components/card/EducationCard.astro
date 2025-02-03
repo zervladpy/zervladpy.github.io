@@ -35,6 +35,12 @@ const { school, field, grade, description, dates } = props.education;
                 )
             }
         </div>
-        <p>{description}</p>
+        <p class="prose">{description}</p>
     </div>
 </article>
+
+<style>
+    p {
+        color: var(--color-foreground);
+    }
+</style>

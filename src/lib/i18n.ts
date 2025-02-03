@@ -5,6 +5,7 @@ interface Translation {
         education: string;
         projects: string;
         skills: string;
+        about: string;
     };
     buttons: {
         explore: string;
@@ -29,6 +30,7 @@ export const i18n: I18n = {
             education: "Education",
             projects: "Projects",
             skills: "Skills",
+            about: "About Me",
         },
         buttons: {
             explore: "Explore",
@@ -44,6 +46,7 @@ export const i18n: I18n = {
             education: "Educación",
             projects: "Proyectos",
             skills: "Habilidades",
+            about: "Sobre mí",
         },
         buttons: {
             explore: "Explorar",
@@ -59,6 +62,7 @@ export const i18n: I18n = {
             education: "Educazione",
             projects: "Progetti",
             skills: "Competenze",
+            about: "Su di me",
         },
         buttons: {
             explore: "Esplora",
@@ -77,6 +81,7 @@ export const i18n: I18n = {
             education: "Educação",
             projects: "Projetos",
             skills: "Habilidades",
+            about: "Sobre mim",
         },
         buttons: {
             explore: "Explorar",
@@ -92,6 +97,7 @@ export const i18n: I18n = {
             education: "Образование",
             projects: "Проекты",
             skills: "Навыки",
+            about: "Обо мне",
         },
         buttons: {
             explore: "Исследовать",

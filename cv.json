@@ -93,6 +93,7 @@
             ]
         }
     ],
+    "about": "I’m a passionate backend developer with a strong drive for problem-solving and continuous learning. Before diving into programming, I spent 10 years in Olympic wrestling, becoming a multiple-time Galician and Spanish champion. The discipline and resilience I developed in sports now fuel my approach to coding, always striving for efficiency, scalability, and security in my solutions. I love programming, tackling challenges, and learning new technologies on my own. Whether it’s building scalable systems, optimizing performance, or exploring new paradigms, I’m always eager to expand my skill set and create impactful software.",
     "skills": [
         "Linux",
         "NodeJs",

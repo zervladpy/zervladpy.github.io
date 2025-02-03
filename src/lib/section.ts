@@ -8,4 +8,5 @@ export const sections = {
     education: { id: "education" },
     projects: { id: "projects" },
     skills: { id: "skills" },
+    about: { id: "about" },
 }

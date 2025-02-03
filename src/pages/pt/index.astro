@@ -14,6 +14,7 @@ import Projects from "@components/section/Projects.astro";
 import Skills from "@components/section/Skills.astro";
 import Footer from "@components/section/Footer.astro";
 import Section from "@components/section/Section.astro";
+import About from "@components/section/About.astro";
 
 import {
     hero,
@@ -21,11 +22,16 @@ import {
     experiences,
     educations,
     projects,
+    about,
     skills,
 } from "cv_pt.json";
 ---
 
-<Layout title="Vladislav Zernov - Software Engineer" locale="pt">
+<Layout
+    title="Vladislav Zernov - Software Engineer"
+    description={hero.description}
+    locale="pt"
+>
     <Header
         links={[
             { label: pt.nav.me, href: `#${sections.hero.id}` },
@@ -36,6 +42,7 @@ import {
             { label: pt.nav.education, href: `#${sections.education.id}` },
             { label: pt.nav.projects, href: `#${sections.projects.id}` },
             { label: pt.nav.skills, href: `#${sections.skills.id}` },
+            { label: pt.nav.about, href: `#${sections.about.id}` },
         ]}
     />
     <Section id={sections.hero.id} class="mt-5">
@@ -52,6 +59,9 @@ import {
     </Section>
     <Section id={sections.skills.id} title={pt.nav.skills}>
         <Skills skills={skills} />
+    </Section>
+    <Section id={sections.about.id} title={pt.nav.about}>
+        <About about={about} />
     </Section>
     <Footer social={social} mail={hero.mail} />
 </Layout>

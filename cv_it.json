@@ -93,6 +93,7 @@
             ]
         }
     ],
+    "about": "Sono uno sviluppatore backend appassionato, con una grande determinazione nella risoluzione dei problemi e nell'apprendimento continuo. Prima di dedicarmi alla programmazione, ho praticato la lotta olimpica per 10 anni, diventando più volte campione della Galizia e della Spagna. La disciplina e la resilienza che ho sviluppato nello sport ora alimentano il mio approccio alla programmazione, puntando sempre all'efficienza, alla scalabilità e alla sicurezza nelle mie soluzioni. Amo programmare, affrontare sfide e imparare nuove tecnologie in modo autonomo. Che si tratti di costruire sistemi scalabili, ottimizzare le prestazioni o esplorare nuovi paradigmi, sono sempre pronto ad ampliare le mie competenze e a creare software di impatto.",
     "skills": [
         "Linux",
         "NodeJs",
