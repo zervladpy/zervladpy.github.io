@@ -25,7 +25,11 @@ import {
 } from "cv_pt.json";
 ---
 
-<Layout title="Vladislav Zernov - Software Engineer" locale="pt">
+<Layout
+    title="Vladislav Zernov - Software Engineer"
+    description={hero.description}
+    locale="pt"
+>
     <Header
         links={[
             { label: pt.nav.me, href: `#${sections.hero.id}` },

@@ -3,10 +3,11 @@ import type { locale } from "@lib/locale";
 
 interface Props {
 	title: string;
+	description?: string;
 	locale?: locale;
 }
 
-const { title, locale } = Astro.props;
+const { title, description, locale } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,6 +18,7 @@ const { title, locale } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="theme-color" content="#171717" />
+		<meta name="description" content={description} />
 		<title>{title}</title>
 	</head>
 	<body>
