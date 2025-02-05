@@ -76,11 +76,21 @@
         {
             "name": "The Swap - Frutty Revenge",
             "description": "Jogo de Plataforma 2D",
-            "image": "/images/mockups/the_swamp_mockup_variant.webp",
+            "image": "/images/mockups/the_swamp_mockup.webp",
             "link": "https://github.com/zervladpy/TheSwam-FruityRevenge/tree/master",
             "stack": [
                 "Unity",
                 "NET"
+            ]
+        },
+        {
+            "name": "Oficina do Paco",
+            "description": "Aplicação de desktop para a gestão de uma oficina mecânica",
+            "image": "/images/mockups/workshop_paco.webp",
+            "link": "https://github.com/zervladpy/TallerPaco",
+            "stack": [
+                "Java",
+                "Hibernate"
             ]
         },
         {
@@ -105,6 +115,7 @@
         "React",
         "Java",
         "SpringBoot",
+        "Hibernate",
         "MySql",
         "PostgreSQL",
         "Dart",
