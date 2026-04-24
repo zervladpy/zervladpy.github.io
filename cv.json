@@ -12,6 +12,14 @@
     },
     "experiences": [
         {
+            "company": "Vip District",
+            "position": "Full Stack Developer",
+            "dates": {
+                "start": "02/2025"
+            },
+            "description": "Responsible for data management, full stack development, and end-to-end project delivery."
+        },
+        {
             "company": "The Digital Company",
             "position": "Full Stack Developer",
             "badge": "Internship",

@@ -12,6 +12,14 @@
     },
     "experiences": [
         {
+            "company": "Vip District",
+            "position": "Desarrollador Full Stack",
+            "dates": {
+                "start": "02/2025"
+            },
+            "description": "Responsable de la gestión de datos, desarrollo full stack y entrega de proyectos de inicio a fin."
+        },
+        {
             "company": "The Digital Company",
             "position": "Desarrollador Full Stack",
             "badge": "Becario",
