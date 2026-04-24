@@ -12,6 +12,14 @@
     },
     "experiences": [
         {
+            "company": "Vip District",
+            "position": "Full Stack Разработчик",
+            "dates": {
+                "start": "02/2025"
+            },
+            "description": "Ответственный за управление данными, разработку полного стека и сопровождение проектов от начала до конца."
+        },
+        {
             "company": "The Digital Company",
             "position": "Full Stack Разработчик",
             "badge": "Стажер",

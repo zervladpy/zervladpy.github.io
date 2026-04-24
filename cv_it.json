@@ -12,6 +12,14 @@
     },
     "experiences": [
         {
+            "company": "Vip District",
+            "position": "Sviluppatore Full Stack",
+            "dates": {
+                "start": "02/2025"
+            },
+            "description": "Responsabile della gestione dei dati, dello sviluppo full stack e della consegna di progetti dall'inizio alla fine."
+        },
+        {
             "company": "The Digital Company",
             "position": "Sviluppatore Full Stack",
             "badge": "Tirocinante",
