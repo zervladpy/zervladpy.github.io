@@ -4,3 +4,4 @@ allowBuilds:
 
 overrides:
   sharp: ^0.35.3
+  postcss-selector-parser: ^7.1.6
